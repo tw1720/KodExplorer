@@ -44,8 +44,8 @@ $config['settings']['appType'] = array(
 	array('type' => 'others','name' => 'app_group_others','class' => 'icon-ellipsis-horizontal'),
 );
 $config['defaultPlugins'] = array(
-	'adminer','DPlayer','imageExif','jPlayer','officeLive','photoSwipe','picasa',//'pdfjs',
-	'simpleClock','toolsCommon','VLCPlayer','webodf','yzOffice','zipView'
+	'adminer','jPlayer',//'pdfjs',
+	'zipView'
 );
 
 
@@ -53,7 +53,7 @@ $config['defaultPlugins'] = array(
 $config['settingSystemDefault'] = array(
 	'systemPassword'	=> rand_string(20),
 	'systemName'		=> "KodExplorer",
-	'systemDesc'		=> "——可道雲.資源管理器",
+	'systemDesc'		=> "——FileManager",
 	'pathHidden'		=> "Thumb.db,.DS_Store,.gitignore,.git",//目錄列表隱藏的項
 	'autoLogin'			=> "0",			// 是否自動登錄；登錄用戶為guest
 	'needCheckCode'		=> "0",			// 登陸是否開啟驗證碼；默認關閉
@@ -79,9 +79,9 @@ $config['settingSystemDefault'] = array(
 $config['settingSystemDefault']['menu'] = array(
 	array('name'=>'desktop','type'=>'system','url'=>'index.php?desktop','target'=>'_self','use'=>'1'),
 	array('name'=>'explorer','type'=>'system','url'=>'index.php?explorer','target'=>'_self','use'=>'1'),
-	// array('name'=>'editor','type'=>'system','url'=>'index.php?editor','target'=>'_self','use'=>'1')
+	array('name'=>'editor','type'=>'system','url'=>'index.php?editor','target'=>'_self','use'=>'1')
 );
-if( strstr(I18n::defaultLang(),'zh') || strstr(I18n::getType(),'zh') ){
+if( strstr(I18n::defaultLang(),'zh-TW') || strstr(I18n::getType(),'zh-TW') ){
 	$config['settingSystemDefault']['newGroupFolder'] = "share";
 	$config['settingSystemDefault']['newUserFolder'] = "document";
 }
@@ -94,7 +94,7 @@ $config['settingDefault'] = array(
 	'fileIconSize'		=> "80",		// 圖標大小
 	'animateOpen'		=> "0",			// dialog動畫
 	'soundOpen'			=> "0",			// 操作音效
-	'theme'				=> "win10",		// app theme [mac,win7,win10,metro,metro_green,alpha]
+	'theme'				=> "alpha",		// app theme [mac,win7,win10,metro,metro_green,alpha]
 	'wall'				=> "8",			// wall picture
 	"fileRepeat"		=> "replace",	// rename,replace,skip
 	"recycleOpen"		=> "1",			// 1 | 0 代表是否開啟
