@@ -44,8 +44,7 @@ $config['settings']['appType'] = array(
 	array('type' => 'others','name' => 'app_group_others','class' => 'icon-ellipsis-horizontal'),
 );
 $config['defaultPlugins'] = array(
-	'adminer','jPlayer',//'pdfjs',
-	'zipView'
+	'adminer','jPlayer','zipView'//'pdfjs',
 );
 
 
@@ -88,22 +87,22 @@ if( strstr(I18n::defaultLang(),'zh-TW') || strstr(I18n::getType(),'zh-TW') ){
 
 //新用戶初始化默認配置
 $config['settingDefault'] = array(
-	'listType'			=> "icon",		// list||icon||split
-	'listSortField'		=> "name",		// name||size||ext||mtime
-	'listSortOrder'		=> "up",		// asc||desc
-	'fileIconSize'		=> "80",		// 圖標大小
-	'animateOpen'		=> "0",			// dialog動畫
-	'soundOpen'			=> "0",			// 操作音效
-	'theme'				=> "alpha",		// app theme [mac,win7,win10,metro,metro_green,alpha]
-	'wall'				=> "8",			// wall picture
-	"fileRepeat"		=> "replace",	// rename,replace,skip
-	"recycleOpen"		=> "1",			// 1 | 0 代表是否開啟
+	'listType'			=> "icon",			// list||icon||split
+	'listSortField'		=> "name",			// name||size||ext||mtime
+	'listSortOrder'		=> "up",			// asc||desc
+	'fileIconSize'		=> "80",			// 圖標大小
+	'animateOpen'		=> "0",				// dialog動畫
+	'soundOpen'			=> "0",				// 操作音效
+	'theme'				=> "alpha_image",	// app theme [mac,win7,win10,metro,metro_green,alpha]
+	'wall'				=> "8",				// wall picture
+	"fileRepeat"		=> "replace",		// rename,replace,skip
+	"recycleOpen"		=> "1",				// 1 | 0 代表是否開啟
 	'resizeConfig'		=> 
 		'{"filename":250,"filetype":80,"filesize":80,"filetime":215,"editorTreeWidth":200,"explorerTreeWidth":200}'
 );
 $config['editorDefault'] = array(
 	'fontSize'		=> '14px',
-	'theme'			=> 'tomorrow',
+	'theme'			=> 'tomorrow_night_eighties',
 	'autoWrap'		=> 1,		//自適應寬度換行
 	'autoComplete'	=> 1,
 	'functionList' 	=> 1,
