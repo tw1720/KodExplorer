@@ -6,7 +6,8 @@ KodExplorer 4.48 精簡了不必要的功能：
 4.刪除了預設的空資料夾。  
 5.刪除了預設的桌面小工具。  
 6.刪除了可新增的Plugin，大部分都失效或不能直接使用。  
-7.關閉了登入時的驗證碼。
+7.關閉了登入時的驗證碼。  
 8.修改了static資料夾到雲端分流使用。
+9.開啟了csrf保護功能。
   
-PS.新版 KodExplorer 已改為 KodCloud
+PS.新版 KodExplorer 已改為 KodCloud  
