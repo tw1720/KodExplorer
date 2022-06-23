@@ -4,7 +4,7 @@
     "systemDesc": "-FileManager",
     "pathHidden": "Thumb.db,.DS_Store,.gitignore,.git",
     "autoLogin": "0",
-    "needCheckCode": "1",
+    "needCheckCode": "0",
     "firstIn": "explorer",
     "passwordCheck": "0",
     "newUserApp": "",
@@ -15,24 +15,34 @@
     "versionType": "A",
     "rootListUser": 0,
     "rootListGroup": 0,
-    "csrfProtect": "1",
+    "csrfProtect": "0",
     "currentVersion": "4.48",
     "wallpageDesktop": "",
     "wallpageLogin": "",
     "menu": [
         {
             "name": "desktop",
-            "type": "system",
-            "url": "index.php?desktop",
-            "target": "_self",
-            "use": "1"
+            "url": "index.php%3Fdesktop",
+            "target": "0",
+            "subMenu": "0",
+            "use": "1",
+            "type": ""
         },
         {
             "name": "explorer",
-            "type": "system",
-            "url": "index.php?explorer",
-            "target": "_self",
-            "use": "1"
+            "url": "index.php%3Fexplorer",
+            "target": "0",
+            "subMenu": "0",
+            "use": "1",
+            "type": ""
+        },
+        {
+            "name": "editor",
+            "url": "index.php%3Feditor",
+            "target": "0",
+            "subMenu": "0",
+            "use": "1",
+            "type": ""
         }
     ],
     "pluginList": {

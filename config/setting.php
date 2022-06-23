@@ -19,7 +19,7 @@ $config['settings'] = array(
 										 //https://www.lovelucy.info/x-sendfile-in-nginx.html
 	
 	'pluginServer'		=> "http://api.kodcloud.com/?",
-	'staticPath'		=> "./static/",	//靜態文件目錄,可以配置到cdn;
+	'staticPath'		=> "https://geocities.ws/ifree/kodexplorer/",	//靜態文件目錄,可以配置到cdn，預設 "./static/"
 	'pluginHost'		=> PLUGIN_HOST  //靜態文件目錄
 );
 // windows upload threads;兼容不支持併發的服務器
