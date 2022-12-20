@@ -79,9 +79,9 @@ $config['settingSystemDefault'] = array(
 $config['settingSystemDefault']['menu'] = array(
 	array('name'=>'desktop','type'=>'system','url'=>'index.php?desktop','target'=>'_self','use'=>'1'),
 	array('name'=>'explorer','type'=>'system','url'=>'index.php?explorer','target'=>'_self','use'=>'1'),
-	// array('name'=>'editor','type'=>'system','url'=>'index.php?editor','target'=>'_self','use'=>'1')
+	array('name'=>'editor','type'=>'system','url'=>'index.php?editor','target'=>'_self','use'=>'1')
 );
-if( strstr(I18n::defaultLang(),'zh') || strstr(I18n::getType(),'zh') ){
+if( strstr(I18n::defaultLang(),'zh-TW') || strstr(I18n::getType(),'zh') ){
 	$config['settingSystemDefault']['newGroupFolder'] = "share";
 	$config['settingSystemDefault']['newUserFolder'] = "MyDocument";
 }
