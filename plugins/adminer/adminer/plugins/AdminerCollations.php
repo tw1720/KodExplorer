@@ -16,7 +16,7 @@ class AdminerCollations
     /**
      * @param array $characterSets Array of allowed character sets.
      */
-    public function __construct(array $characterSets = ["utf8mb4_general_ci", "ascii_general_ci"])
+    public function __construct(array $characterSets = ["utf8mb4_unicode_ci", "utf8mb4_general_ci", "ascii_general_ci"])
     {
         $this->characterSets = $characterSets;
     }
