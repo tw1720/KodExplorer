@@ -16,7 +16,11 @@ function adminer_object()
         new AdminerSimpleMenu(),
         new AdminerCollations(),
         new AdminerJsonPreview(),
-
+        new AdminerDumpArray(),
+        new AdminerColorfields(),
+        new AdminerDumpJson(),
+        new AdminerSuggestTableField(),
+        
         // AdminerTheme has to be the last one.
         new AdminerTheme(),
     ];
